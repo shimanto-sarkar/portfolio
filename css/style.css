@@ -1,0 +1,277 @@
+/* ============ all links ============== */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* ============== common css ============== */
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul,ol{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --ibm_plex : "IBM Plex Mono", serif;
+    --railway : "Raleway", serif;
+    --brand_color : #080808 ;
+    --primary_color : #9C9C9C;
+
+}
+
+/* ============== menubar part ============= */
+
+.navbar {
+    padding:24px 50px;
+    margin: 0 85px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #1B1B1B;
+    animation: navbar 2.5s linear;
+}
+.navbar .logo{
+    font: 700 22px var(--ibm_plex);
+    color: var(--primary_color);
+    letter-spacing: 1px;
+}
+.navbar ul a{
+    font: 400 14px var(--ibm_plex);
+    color: var(--primary_color) !important;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+.navbar ul a:hover{
+    transform: scale(1.2);
+    color: rgb(11, 197, 61) !important;
+}
+.navbar ul{
+    align-items: center;
+    gap: 30px;
+}
+.navbar .icons{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navbar button{
+    color: rgb(11, 197, 61);
+    background-color: rgb(11, 197, 61)
+}
+
+@keyframes navbar {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+/* ============== menubar part ============= */
+/* ============== banner part ============= */
+
+#banner {
+    padding: 150px 180px 200px;
+    background-color: var(--brand_color);
+    animation: banner 1.7s linear;
+}
+
+#banner .img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 30px !important;
+    animation: banner_img 1.7s linear;
+}
+#banner .img img{
+    width: 100%;
+}
+
+#banner .text{
+    margin-top: 91px;
+    overflow: hidden;
+}
+#banner h1{
+    font: 800 44px var(--railway);
+    color: white;
+    animation: heading 1.7s linear;
+}
+#banner .text p{
+    font: 400 14px var(--ibm_plex);
+    color: var(--primary_color);
+    line-height: 24px;
+    letter-spacing: 1%;
+    margin: 20px 0 40px;
+    
+}
+#banner .text a{
+    padding: 21px 64px;
+    background: linear-gradient(to right,rgb(11, 197, 61),rgb(214, 246, 109)); 
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    font: 700 16px var(--ibm_plex);
+    color: white;
+    
+}
+#banner .text a:hover{
+    background: linear-gradient(to right,rgb(214, 246, 109),rgb(11, 197, 61)); 
+}
+
+/* =========== banner animation ================= */
+
+@keyframes banner {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes heading {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes banner_img {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* =========== banner animation ================= */
+
+/* =========== banner part  ================= */
+
+/* =========== STUDIES PART START =========== */
+
+#studies{
+    margin-top: 80px;
+}
+#studies .heading h2{
+    font: 800 34px var(--railway);
+    color: var(--brand_color);
+    text-align: center;
+}
+#studies .heading p{
+    font: 400 14px var(--ibm_plex);
+    color: var(--primary_color);
+    line-height: 24px;
+    letter-spacing: 1px;
+    margin: 10px 0 60px;
+    text-align: center;
+}
+
+#studies .card_row{
+    margin-bottom: 80px;
+}
+#studies img{
+    width: 100%;   
+}
+#studies .text h3{
+    font: 700 12px var(--ibm_plex);
+    color: #FFA217;
+    line-height: 24px;
+    letter-spacing: 1%;
+    margin-top: 27px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    background-color: #FFF6E9;
+    width: fit-content;
+    border-radius: 30px;
+}
+#studies .text h2{
+    font: 800 24px var(--railway);
+    color: var(--brand_color);
+    
+}
+#studies .text p{
+    font: 400 14px var(--ibm_plex);
+    color: var(--primary_color);
+    line-height: 24px;
+    letter-spacing: 1%;
+    margin: 10px 0 40px;
+}
+#studies .text a{
+    padding: 10px 24px;
+    background-color: #FFA217;
+    border-radius: 10px;
+    font: 700 14px var(--ibm_plex);
+    color: white;
+    transition: .3s ease-in-out;
+}
+#studies .text a:hover{
+    transform: scale(1.1);
+}
+#studies .text2{
+    color: #000AFF !important;
+    background-color: #D0E6FF !important;
+}
+
+#studies .btn2{
+    color: #000AFF !important;
+    background-color: #D0E6FF !important;
+}
+#studies .text3{
+    color: #FFFFFF !important;
+    background-color: #2AB090 !important;
+}
+
+#studies .btn3{
+    color: #FFFFFF !important;
+    background-color: #2AB090 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========== STUDIES PART END =========== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============== banner part ============= */
